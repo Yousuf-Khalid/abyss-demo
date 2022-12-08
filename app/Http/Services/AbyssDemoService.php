@@ -95,15 +95,6 @@ class AbyssDemoService extends BaseService {
     public function getById($id)
     {
         $collection = $this->model->where('id', $id)->first();
-        
-        if(!$collection) {
-            dd('why');
-            return response()->json([
-                'status' => false,
-                'message' => 'record not found!',
-                'data' => null,
-            ], 404);
-        }
 
         // set temporary url to access file
         $file_url = $this->disk->temporaryUrl(
