@@ -15,6 +15,6 @@
 <br>
 
 <b>Note:</b>
-<i>This project has some cron jobs setup. You need to only configure command <code>php artisan schedule:run</code> in your cron job system setting.</i>
+<i>This project has some cron jobs setup. You need to only configure command </i><code>php artisan schedule:run</code> <i>in your cron job system setting.</i>
 <br>
 <h3>Congrats! You have everything ready.</p>
