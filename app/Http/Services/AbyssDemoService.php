@@ -99,7 +99,7 @@ class AbyssDemoService extends BaseService {
         // set temporary url to access file
         $file_url = $this->disk->temporaryUrl(
             $collection->file,
-            now()->addMinutes(config('filesystems.url_expiry'))
+            now()->addMinutes(config('filesystems.url_expiry') ?? 5)
         );
 
         return response()->json([
